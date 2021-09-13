@@ -6,7 +6,7 @@
 title: 泉此方的博客！
 subtitle: ''
 description: ''
-keywords:
+keywords: 泉此方的个人博客,'泉此方的个人博客'
 author: 泉此方
 language: zh-CN
 timezone: ''
@@ -104,4 +104,4 @@ theme: landscape
 deploy:
   type: 'git'
   repo: git@github.com:izumikonata10/izumikonata10.github.io.git
-  branch: company
+  branch: master
