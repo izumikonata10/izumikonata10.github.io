@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>泉此方</title>
+  <title>泉此方的博客</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2020-03-15T19:41:30.000Z</updated>
+  <updated>2021-09-14T09:15:44.087Z</updated>
   <id>/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="/2018/12/12/Hexo-Theme-Sakura/"/>
     <id>/2018/12/12/Hexo-Theme-Sakura/</id>
     <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2020-03-15T19:41:30.000Z</updated>
+    <updated>2021-09-14T09:15:44.087Z</updated>
     
     <summary type="html">
     
