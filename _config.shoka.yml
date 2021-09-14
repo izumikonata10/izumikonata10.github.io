@@ -1,0 +1,11 @@
+## 站点别称
+alternate: Izumi Konata
+
+#statics: cdn.jsdelivr.net/gh/amehime/shoka@latest/
+
+
+sidebar:
+  # Sidebar Position.
+  # position: left
+  position: right
+  avatar: avatar.jpg
