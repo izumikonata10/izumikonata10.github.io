@@ -6,13 +6,13 @@ favicon: /images/favicon.ico
 avatar: /img/custom/avatar.jpg
 url: https://sakura.hojun.cn
 description: 泉此方的个人博客！
-cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
+cdn: https://cdn.jsdelivr.net/gh/izumikonata10/cdn
 pjax: 1
 # 1开启
 mathjax: 0
 # 网站公告
 notice: 这里是网站公告！但是因为还没有建成，所以没有公告...
-lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
+lazyloadImg: https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
@@ -47,14 +47,14 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(1).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(2).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(3).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(4).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(5).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(6).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(7).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(8).jpg.webp
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(1).jpg.webp
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(2).jpg.webp
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(3).jpg.webp
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(4).jpg.webp
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(5).jpg.webp
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(6).jpg.webp
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(7).jpg.webp
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(8).jpg.webp
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: filter-dot
@@ -95,7 +95,7 @@ donate:
 
 # 首页视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
 movies:
-  url: https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
+  url: https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/video
   # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用 【改】
   name: Unbroken.mp4
 
