@@ -3,10 +3,10 @@ prefixName: さくら荘その
 siteName: 泉此方
 # favicon and site master avatar
 favicon: /images/favicon.ico
-avatar: /img/custom/avatar.jpg
+avatar: /img/custom/qcf_head.jpg
 url: https://sakura.hojun.cn
 description: 泉此方的个人博客！
-cdn: https://cdn.jsdelivr.net/gh/izumikonata10/cdn
+cdn: https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura
 pjax: 1
 # 1开启
 mathjax: 0
@@ -37,7 +37,7 @@ menus:
     主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
     Lab: {path: /lab/, fa: fa-cogs },
   } }
-  客户端: { path: /client/, fa: fa-android faa-vertical }
+  #客户端: { path: /client/, fa: fa-android faa-vertical }
   RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
 
 

@@ -1,14 +1,14 @@
 ---
 layout: links
 title: links
-date: 2018-12-19 23:11:06
+date: 2021-09-16 16:20:32
 keywords: 友人帐
 description: 
 comments: true
 photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/links.jpg
 links:
   - group: 个人项目
-    desc: 充分说明这家伙是条咸鱼 < (￣︶￣)>
+    desc: 充分说明我是条咸鱼 < (￣︶￣)>
     items:
     - url: https://shino.cc/fgvf
       img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg

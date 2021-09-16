@@ -5,11 +5,13 @@
 # Site
 title: 泉此方的博客
 subtitle:
+# description主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。
 description: 泉此方的个人博客
 keywords:
+# author参数用于主题显示文章的作者。
 author: 泉此方
 language: zh-cn
-timezone:
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
