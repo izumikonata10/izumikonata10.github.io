@@ -5,7 +5,7 @@ avatar: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg
 authorLink: hojun.cn
 authorAbout: 一个好奇的人
 authorDesc: 一个好奇的人
-categories: 技术
+categories: 生活
 date: 2018-12-12 22:16:01
 comments: true
 tags: 
@@ -24,11 +24,6 @@ hexo-theme-sakura主题 [English document](https://github.com/honjun/hexo-theme-
 正在开发中......
 
 ![](https://wx3.sinaimg.cn/large/006bYVyvly1g069tuf42oj312w0m8ndq.jpg)
-
-## 交流群
-若你是使用者，加群QQ: 801511924
-
-若你是创作者，加群QQ: 194472590
 
 
 ## 主题特性

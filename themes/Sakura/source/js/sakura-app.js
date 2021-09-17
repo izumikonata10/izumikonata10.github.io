@@ -1104,6 +1104,7 @@ var home = location.href,
           el: '#vcomments',
           appId: mashiro_option.v_appId,
           appKey: mashiro_option.v_appKey,
+		  enableQQ: true,
           path: window.location.pathname,
           placeholder: '你是我一生只会遇见一次的惊喜 ...'
         })
@@ -1611,7 +1612,8 @@ $(function () {
   })
   console.log('%c Mashiro %c', 'background:#24272A; color:#ffffff', '', 'https://2heng.xin/')
   console.log('%c hojun %c', 'background:#24272A; color:#ffffff', '', 'https://www.hojun.cn/')
-  console.log('%c Github %c', 'background:#24272A; color:#ffffff', '', 'https://github.com/honjun/hexo-theme-sakura')
+  console.log('%c izumi %c', 'background:#24272A; color:#ffffff', '', 'https://izumikonata.com/')
+  console.log('%c Github %c', 'background:#24272A; color:#ffffff', '', 'https://github.com/izumikonata10')
 })
 var isWebkit = navigator.userAgent.toLowerCase().indexOf('webkit') > -1,
   isOpera = navigator.userAgent.toLowerCase().indexOf('opera') > -1,
