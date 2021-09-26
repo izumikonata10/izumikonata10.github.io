@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2021-09-17T05:25:19.555Z</updated>
+  <updated>2021-09-26T08:09:40.264Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo-Theme-Sakura</title>
+    <link href="/2021/09/18/game/"/>
+    <id>/2021/09/18/game/</id>
+    <published>2021-09-18T14:16:01.000Z</published>
+    <updated>2021-09-26T08:09:40.264Z</updated>
+    
+    <summary type="html">
+    
+      游戏清单
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="games" scheme="/tags/games/"/>
+    
+      <category term="游戏" scheme="/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-Theme-Sakura</title>
+    <link href="/2018/12/12/2021.09.26/"/>
+    <id>/2018/12/12/2021.09.26/</id>
+    <published>2018-12-12T14:16:01.000Z</published>
+    <updated>2021-09-26T08:09:54.152Z</updated>
+    
+    <summary type="html">
+    
+      hexo-sakura主题使用教程
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="web" scheme="/tags/web/"/>
+    
+      <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo-Theme-Sakura</title>
