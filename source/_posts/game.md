@@ -1,5 +1,5 @@
 ---
-title: Hexo-Theme-Sakura
+title: 游戏清单
 author: izumi
 avatar: https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/custom/qcf_head.jpg
 authorLink: izumikonata.com

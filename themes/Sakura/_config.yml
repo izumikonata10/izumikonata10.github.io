@@ -32,7 +32,7 @@ menus:
   } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   友人帐: { path: /links/, fa: fa-link faa-shake }
-  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
+  #赞赏: { path: /donate/, fa: fa-heart faa-pulse }
   关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
     我？: {path: /about/, fa: fa-meetup}, 
     主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
@@ -48,17 +48,18 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(1).jpg.webp
-  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(2).jpg.webp
-  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(3).jpg.webp
-  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(4).jpg.webp
-  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(5).jpg.webp
-  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(6).jpg.webp
-  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(7).jpg.webp
-  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/(8).jpg.webp
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/Gilgamesh1.png
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/aqua1.png
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/darksoul3(1).jpg
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/ketsunomito1.jpg
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/MatoiRyuuko1.jpg
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/meme1.jpg
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/rwby1.png
+  - https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/cover/rayxzake1.png
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
-bgclass: filter-dot
+# bgclass: filter-dot
+bgclass: 
 
 # startdash url, title, desc img
 startdash: 
