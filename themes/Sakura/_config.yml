@@ -11,19 +11,20 @@ pjax: 1
 # 1开启
 mathjax: 0
 # 网站公告
-notice: 这里是网站公告！但是因为还没有建成，所以没有公告...
+notice: 欢迎来到泉此方的个人博客！因为没有什么想法，所以并没有什么内容
 lazyloadImg: https://cdn.jsdelivr.net/gh/izumikonata10/cdn/sakura/img/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
   归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
-    技术: {path: /categories/技术/, fa: fa-code }, 
-    生活: {path: /categories/生活/, fa: fa-file-text-o }, 
-    资源: {path: /categories/资源/, fa: fa-cloud-download }, 
+    技术: {path: /tags/技术/, fa: fa-code }, 
+    生活: {path: /tags/生活/, fa: fa-file-text-o }, 
+    资源: {path: /tags/资源/, fa: fa-cloud-download }, 
     #随想: {path: /categories/随想/, fa: fa-commenting-o },
-    转载: {path: /categories/转载/, fa: fa-book }
+    转载: {path: /tags/转载/, fa: fa-book }
   } }
-  清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
+  清单  : { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
+    自我介绍: {path: /2021/10/12/myself, fa: fa-meetup},
     书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
     歌单: {path: /music/, fa: fa-headphones },
@@ -63,12 +64,14 @@ bgclass:
 
 # startdash url, title, desc img
 startdash: 
+  - {url: /2021/10/12/myself, title: 自我介绍, desc: 博主的简介, img: /img/custom/dundundun.jpg}
   - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
   - {url: http://space.bilibili.com/6516529, title: Bilibili, desc: 博主的b站视频, img: /img/startdash/bilibili.jpg}
-  - {url: /, title: hojun的万事屋, desc: 技术服务, img: /img/startdash/wangshiwu.jpg}
 
 
 
+
+#你的博客建立时间
 # your site build time or founded date
 siteBuildingTime: 09/14/2021
 

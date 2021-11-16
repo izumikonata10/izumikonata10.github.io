@@ -11,6 +11,7 @@ comments: true
 tags: 
  - games
  - 游戏
+ - 生活
 keywords: games
 description: 游戏清单
 photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/startdash/wangshiwu.jpg
