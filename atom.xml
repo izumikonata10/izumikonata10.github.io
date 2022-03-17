@@ -45,7 +45,7 @@
     <link href="/2021/09/29/2021.09.26/"/>
     <id>/2021/09/29/2021.09.26/</id>
     <published>2021-09-29T14:16:01.000Z</published>
-    <updated>2021-11-16T03:20:04.779Z</updated>
+    <updated>2022-03-17T02:56:42.558Z</updated>
     
     <summary type="html">
     
@@ -56,11 +56,11 @@
       <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="生活" scheme="/tags/%E7%94%9F%E6%B4%BB/"/>
-    
       <category term="web" scheme="/tags/web/"/>
     
       <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+      <category term="生活" scheme="/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
@@ -69,7 +69,7 @@
     <link href="/2021/09/18/game/"/>
     <id>/2021/09/18/game/</id>
     <published>2021-09-18T14:16:01.000Z</published>
-    <updated>2021-11-16T03:19:55.746Z</updated>
+    <updated>2022-03-17T02:57:21.189Z</updated>
     
     <summary type="html">
     
@@ -80,11 +80,11 @@
       <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
+      <category term="生活" scheme="/tags/%E7%94%9F%E6%B4%BB/"/>
+    
       <category term="games" scheme="/tags/games/"/>
     
       <category term="游戏" scheme="/tags/%E6%B8%B8%E6%88%8F/"/>
-    
-      <category term="生活" scheme="/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
