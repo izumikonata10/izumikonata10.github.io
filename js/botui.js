@@ -158,6 +158,11 @@ function bot_ui_ini() {
                 botui.message.add({
                     delay: 1600,
                     content: "那么，仔细看看我的博客吧？ ^_^"
+                }).then(function () {
+                    botui.message.add({
+                        delay: 1200,
+                        content: "[想了解关于我的更多吗，想的话点击看我的自我介绍吧](/2021/10/12/myself/)"
+                    })
                 })
             })
         } 
