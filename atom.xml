@@ -6,7 +6,7 @@
   <link href="https://izumikonata.com/atom.xml" rel="self"/>
   
   <link href="https://izumikonata.com/"/>
-  <updated>2026-09-22T08:57:05.380Z</updated>
+  <updated>2026-09-22T15:47:01.602Z</updated>
   <id>https://izumikonata.com/</id>
   
   <author>
@@ -17,14 +17,14 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>myself</title>
+    <title>关于泉此方</title>
     <link href="https://izumikonata.com/2021/10/12/myself/"/>
     <id>https://izumikonata.com/2021/10/12/myself/</id>
     <published>2021-10-12T07:00:00.000Z</published>
-    <updated>2026-09-22T08:57:05.380Z</updated>
+    <updated>2026-09-22T15:47:01.602Z</updated>
     
     
-    <summary type="html">自我介绍</summary>
+    <summary type="html">关于泉此方、这个昵称，以及我想在博客里记录的东西</summary>
     
     
     
@@ -54,11 +54,11 @@
     <category term="生活" scheme="https://izumikonata.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
+    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
     <category term="web" scheme="https://izumikonata.com/tags/web/"/>
     
     <category term="悦读" scheme="https://izumikonata.com/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
@@ -77,11 +77,11 @@
     <category term="生活" scheme="https://izumikonata.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
     <category term="games" scheme="https://izumikonata.com/tags/games/"/>
     
     <category term="游戏" scheme="https://izumikonata.com/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   

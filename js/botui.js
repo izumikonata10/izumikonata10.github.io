@@ -25,145 +25,76 @@ function bot_ui_ini() {
     // Vue may replace the mount node. Mark the current node, not a detached one.
     container = document.getElementById('hello-mashiro')
     if (container) container._botui = botui
-    botui.message.add({
-        delay: 800,
-        content: "Hi, there👋"
-    }).then(function () {
-        botui.message.add({
-            delay: 1100,
-            content: "这里是 Konata"
-        }).then(function () {
-            botui.message.add({
-                delay: 1100,
-                content: "一个可爱？的蓝孩子~"
-            }).then(function () {
-                botui.action.button({
-                    delay: 1600,
-                    action: [{
-                        text: "然后呢？ 😃",
-                        value: "sure"
-                    }, {
-                        text: "少废话！ 🙄",
-                        value: "skip"
-                    }]
-                }).then(function (a) {
-                    "sure" == a.value && sure();
-                    "skip" == a.value && end()
-                })
-            })
+    var sayAll = function (messages, done) {
+        var index = 0
+        var next = function () {
+            if (index >= messages.length) {
+                done()
+                return
+            }
+            botui.message.add(messages[index++]).then(next)
+        }
+        next()
+    }
+
+    var finish = function () {
+        sayAll([{
+            delay: 700,
+            content: "这个小站还在慢慢长大，欢迎偶尔回来看看。"
+        }, {
+            delay: 700,
+            content: "[想了解关于我的更多吗，想的话点击看我的自我介绍吧](/2021/10/12/myself/)"
+        }], function () {})
+    }
+
+    var introduceMe = function () {
+        sayAll([{
+            delay: 700,
+            content: "“泉此方”这个名字来自《幸运☆星》的主角。"
+        }, {
+            delay: 700,
+            content: "我和她一样喜欢动画和游戏，也喜欢在网上折腾自己感兴趣的东西。"
+        }, {
+            delay: 700,
+            content: "不太擅长一本正经地介绍自己，所以就把答案慢慢写进博客里啦。"
+        }], finish)
+    }
+
+    var introduceBlog = function () {
+        sayAll([{
+            delay: 700,
+            content: "这里会记录看过的番组、玩过的游戏、生活碎片，还有折腾网站的过程。"
+        }, {
+            delay: 700,
+            content: "以后也想把一些能直接玩的网页小游戏放进来。"
+        }, {
+            delay: 700,
+            content: "内容不一定更新得很快，但每一页都会尽量保留自己的味道。"
+        }], finish)
+    }
+
+    sayAll([{
+        delay: 500,
+        content: "嗨，欢迎来到这里 👋"
+    }, {
+        delay: 700,
+        content: "我是泉此方，也可以叫我 Konata。"
+    }, {
+        delay: 700,
+        content: "想从哪里开始认识我？"
+    }], function () {
+        botui.action.button({
+            delay: 500,
+            action: [{
+                text: "先认识一下你 👀",
+                value: "about-me"
+            }, {
+                text: "这个博客有什么？ ✨",
+                value: "about-blog"
+            }]
+        }).then(function (answer) {
+            if (answer.value === "about-me") introduceMe()
+            if (answer.value === "about-blog") introduceBlog()
         })
-    });
-    var sure = function () {
-            botui.message.add({
-                delay: 600,
-                content: "😘"
-            }).then(function () {
-                secondpart()
-            })
-        },
-        end = function () {
-            botui.message.add({
-                delay: 600,
-                content: "![...](/images/site/content/botui.webp)"
-            })
-        },
-        secondpart = function () {
-            botui.message.add({
-                delay: 1500,
-                content: "目前就职于无锡"
-            }).then(function () {
-                botui.message.add({
-                    delay: 1500,
-					content: "balabalabala......"
-                    /* content: "向往技术却误入商科，但后来喜欢上了经济学…" */
-                }).then(function () {
-                    botui.message.add({
-                        delay: 1200,
-						content: "balabalabala......"
-                        /* content: "因为数据分析也需要Coder嘛" */
-                    }).then(function () {
-                        botui.message.add({
-                            delay: 1500,
-							content: "balabalabala......"
-                            /* content: "主攻 R 语言和 Python，略懂 STATA，偶尔也折腾 HTML/CSS/JavaScript/PHP" */
-                        }).then(function () {
-                            botui.message.add({
-                                delay: 1500,
-								content: "balabalabala......"
-                                /* content: "研究的方向，是经济/金融方向的数据分析（data science）以及机器学习（machine learning）" */
-                            }).then(function () {
-                                botui.message.add({
-                                    delay: 1800,
-									content: "balabalabala......"
-                                    /* content: "喜欢画画，希望有一天能够被称为画师" */
-                                }).then(function () {
-                                    botui.action.button({
-                                        delay: 1100,
-                                        action: [{
-                                            text: "为什么叫Konata呢？ 🤔",
-                                            value: "why-konata"
-                                        }]
-                                    }).then(function (a) {
-                                        thirdpart()
-                                    })
-                                })
-                            })
-                        })
-                    })
-                })
-            })
-        },
-        thirdpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "Konata以及站名都来自一部动画，因为和主角有一样的爱好~ 如果有兴趣可以找找首页上的视频~"
-            }).then(function () {
-                botui.action.button({
-                    delay: 1500,
-                    action: [{
-                        text: "为什么是白猫呢？ 🤔",
-                        value: "why-cat"
-                    }]
-                }).then(function (a) {
-                    fourthpart()
-                })
-            })
-        },
-        fourthpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "因为对GitHub有种执念… "
-            }).then(function () {
-                botui.message.add({
-                    delay: 1100,
-                    content: "而且我真的是猫控！"
-                }).then(function () {
-                    botui.action.button({
-                        delay: 1500,
-                        action: [{
-                            text: "域名有什么含意吗？(ง •_•)ง",
-                            value: "why-domain"
-                        }]
-                    }).then(function (a) {
-                        fifthpart()
-                    })
-                })
-            })
-        },
-        fifthpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "emmmm，看备案信息你就知道了=.= 本来想要izumi.com的，但是买不起。。"
-            }).then(function () {
-                botui.message.add({
-                    delay: 1600,
-                    content: "那么，仔细看看我的博客吧？ ^_^"
-                }).then(function () {
-                    botui.message.add({
-                        delay: 1200,
-                        content: "[想了解关于我的更多吗，想的话点击看我的自我介绍吧](/2021/10/12/myself/)"
-                    })
-                })
-            })
-        } 
+    })
 }
