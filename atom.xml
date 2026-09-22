@@ -6,7 +6,7 @@
   <link href="https://izumikonata.com/atom.xml" rel="self"/>
   
   <link href="https://izumikonata.com/"/>
-  <updated>2026-09-21T13:17:01.969Z</updated>
+  <updated>2026-09-22T08:57:05.380Z</updated>
   <id>https://izumikonata.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://izumikonata.com/2021/10/12/myself/"/>
     <id>https://izumikonata.com/2021/10/12/myself/</id>
     <published>2021-10-12T07:00:00.000Z</published>
-    <updated>2026-09-21T13:17:01.969Z</updated>
+    <updated>2026-09-22T08:57:05.380Z</updated>
     
     
     <summary type="html">自我介绍</summary>
@@ -44,7 +44,7 @@
     <link href="https://izumikonata.com/2021/09/29/2021.09.26/"/>
     <id>https://izumikonata.com/2021/09/29/2021.09.26/</id>
     <published>2021-09-29T14:16:01.000Z</published>
-    <updated>2026-09-21T13:40:22.850Z</updated>
+    <updated>2026-09-22T08:57:04.044Z</updated>
     
     
     <summary type="html">21.9.29日记</summary>
@@ -54,11 +54,11 @@
     <category term="生活" scheme="https://izumikonata.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
     <category term="web" scheme="https://izumikonata.com/tags/web/"/>
     
     <category term="悦读" scheme="https://izumikonata.com/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
@@ -67,7 +67,7 @@
     <link href="https://izumikonata.com/2021/09/18/game/"/>
     <id>https://izumikonata.com/2021/09/18/game/</id>
     <published>2021-09-18T14:16:01.000Z</published>
-    <updated>2026-09-21T13:17:01.968Z</updated>
+    <updated>2026-09-22T08:57:04.716Z</updated>
     
     
     <summary type="html">游戏清单</summary>
@@ -77,11 +77,11 @@
     <category term="生活" scheme="https://izumikonata.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
+    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
     <category term="games" scheme="https://izumikonata.com/tags/games/"/>
     
     <category term="游戏" scheme="https://izumikonata.com/tags/%E6%B8%B8%E6%88%8F/"/>
-    
-    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
@@ -90,7 +90,7 @@
     <link href="https://izumikonata.com/2018/12/12/Hexo-Theme-Sakura/"/>
     <id>https://izumikonata.com/2018/12/12/Hexo-Theme-Sakura/</id>
     <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2026-09-21T13:17:01.968Z</updated>
+    <updated>2026-09-22T14:57:16.130Z</updated>
     
     
     <summary type="html">hexo-sakura主题使用教程</summary>

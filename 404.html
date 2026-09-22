@@ -40,6 +40,7 @@
         .whole img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
 
         .mask {
@@ -96,32 +97,39 @@
             margin: 0 5px;
             font-weight: bold;
         }
-    </style>
-    <script type="text/javascript">
-        var num = 5;
-        function redirect() {
-            num--;
-            document.getElementById("num").innerHTML = num;
-            if (num < 0) {
-                document.getElementById("num").innerHTML = 0;
-                location.href = "https://www.hojun.cn";
+
+        @media (max-width: 720px) {
+            .b {
+                box-sizing: border-box;
+                padding: 0 24px;
+            }
+
+            .center {
+                font-size: 40px;
+                line-height: 1.25;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
+            .a.center {
+                font-size: 18px;
             }
         }
-        setInterval("redirect()", 1000);
-    </script>
+    </style>
 </head>
 
-<!-- <body onload="redirect();">
+<body>
 <div class="whole">
-    <img src="https://wx4.sinaimg.cn/large/006bYVyvgy1ftan82duvvj30xc0p0mzb.jpg">
+    <img src="/images/site/theme/not-found.webp" alt="页面未找到">
     <div class="mask"></div>
 </div>
 <div class="b">
     <h1 class="center">可能输错网址或此页面从未存在过</h1>
-    <p><br><br><br><br>
-        <span id="num"></span>秒后将继续探险...
-    </p>
-</div> -->
+    <p>可以返回首页继续浏览。</p>
+    <div class="a center"><a href="/">返回首页</a></div>
+</div>
 </body>
-<script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homePageUrl="https://www.hojun.cn/" homePageName="返回主页"></script>
 </html>

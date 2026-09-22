@@ -170,20 +170,20 @@ function imgError (ele, type) {
   switch (type) {
     case 1:
       if (ele.src.includes('https://cn.gravatar.com/avatar')) {
-        ele.src = ele.src.replace('https://cn.gravatar.com/avatar/', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/gravatar.jpg')
+        ele.src = ele.src.replace('https://cn.gravatar.com/avatar/', '/images/site/theme/gravatar.jpg')
       } else {
-        ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/default_avatar.jpg'
+        ele.src = '/images/site/theme/default-avatar.jpg'
       }
       break
     case 2:
-      ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/default_gavatar.jpg'
+      ele.src = '/images/site/theme/default-gravatar.png'
       break
     case 3:
 
-      ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/image-404.png'
+      ele.src = '/images/site/theme/image-404.webp'
       break
     default:
-      ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/image-404.png'
+      ele.src = '/images/site/theme/image-404.webp'
   }
 }
 mashiro_global.post_list_show_animation = new function () {
@@ -321,7 +321,7 @@ function attach_image () {
             $('.insert-image-tips').html('<i class="fa fa-picture-o" aria-hidden="true"></i>')
           }, 1000)
           var get_the_url = res.data.url.replace('https://i.loli.net/', 'https://static.shino.cc/user-upload/')
-          $('#upload-img-show').append('<img class="lazyload upload-image-preview" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.2/img/svg/loader/trans.ajax-spinner-preloader.svg" data-src="' + get_the_url + '" onclick="window.open(\'' + get_the_url + '\')" onerror="imgError(this)" />')
+          $('#upload-img-show').append('<img class="lazyload upload-image-preview" src="/images/site/ui/lazyload.svg" data-src="' + get_the_url + '" onclick="window.open(\'' + get_the_url + '\')" onerror="imgError(this)" />')
           lazyload()
           addComment.createButterbar('图片上传成功~<br>Uploaded successfully~')
           grin(res.data.url.replace('https://i.loli.net/', '{UPLOAD}'), type = 'Img')
@@ -432,7 +432,7 @@ function checkBgImgCookie () {
     $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
   }
   if (bgurl != '') {
-    if (bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/sakura.png' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/plaid.jpg' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/star.png' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/point.png' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/little-monster.png') {
+    if (bgurl == '/images/site/theme/sakura.webp' || bgurl == '/images/site/theme/plaid.webp' || bgurl == '/images/site/theme/star.png' || bgurl == '/images/site/theme/point.png' || bgurl == '/images/site/theme/little-monster.webp') {
       mashiro_global.variables.skinSecter = true
       mashiro_global.variables.isNight = false
       $('#night-mode-cover').css('visibility', 'hidden')
@@ -499,11 +499,11 @@ $(document).ready(function () {
       setCookie('bgImgSetting', url, 30)
     })
   }
-  changeBG('#sakura-bg', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/sakura.png')
-  changeBG('#gribs-bg', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/plaid.jpg')
-  changeBG('#pixiv-bg', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/star.png')
-  changeBG('#KAdots-bg', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/point.png')
-  changeBG('#totem-bg', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/little-monster.png')
+  changeBG('#sakura-bg', '/images/site/theme/sakura.webp')
+  changeBG('#gribs-bg', '/images/site/theme/plaid.webp')
+  changeBG('#pixiv-bg', '/images/site/theme/star.png')
+  changeBG('#KAdots-bg', '/images/site/theme/point.png')
+  changeBG('#totem-bg', '/images/site/theme/little-monster.webp')
   changeBGnoTrans('#bing-bg', 'https://api.shino.cc/bing/')
   $('.skin-menu #white-bg').click(function () {
     mashiro_global.variables.skinSecter = false
@@ -521,7 +521,7 @@ $(document).ready(function () {
   $('.skin-menu #dark-bg').click(function () {
     mashiro_global.variables.skinSecter = true
     mashiro_global.variables.isNight = true
-    $('body').css('background-image', 'url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/starry_sky.png)')
+    $('body').css('background-image', 'url(/images/site/theme/starry-sky.webp)')
     $('.blank').css('background-color', 'rgba(255,255,255,.8)')
     $('#night-mode-cover').css('visibility', 'visible')
     $('.pattern-center').removeClass('pattern-center').addClass('pattern-center-sakura')
