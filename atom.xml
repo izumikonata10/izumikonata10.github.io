@@ -54,11 +54,11 @@
     <category term="生活" scheme="https://izumikonata.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
     <category term="web" scheme="https://izumikonata.com/tags/web/"/>
     
     <category term="悦读" scheme="https://izumikonata.com/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
@@ -67,21 +67,21 @@
     <link href="https://izumikonata.com/2021/09/18/game/"/>
     <id>https://izumikonata.com/2021/09/18/game/</id>
     <published>2021-09-18T14:16:01.000Z</published>
-    <updated>2026-09-22T08:57:04.716Z</updated>
+    <updated>2026-09-22T16:00:00.000Z</updated>
     
     
-    <summary type="html">游戏清单</summary>
+    <summary type="html">泉此方的 Steam 游戏游玩记录与游戏清单</summary>
     
     
     
     <category term="生活" scheme="https://izumikonata.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
+    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
     <category term="games" scheme="https://izumikonata.com/tags/games/"/>
     
     <category term="游戏" scheme="https://izumikonata.com/tags/%E6%B8%B8%E6%88%8F/"/>
-    
-    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
