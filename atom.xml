@@ -6,7 +6,7 @@
   <link href="https://izumikonata.com/atom.xml" rel="self"/>
   
   <link href="https://izumikonata.com/"/>
-  <updated>2026-09-22T15:47:01.602Z</updated>
+  <updated>2026-09-25T08:36:42.961Z</updated>
   <id>https://izumikonata.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>时隔 1822 天，又拾起了这个博客</title>
+    <link href="https://izumikonata.com/2026/09/25/2026.09.25/"/>
+    <id>https://izumikonata.com/2026/09/25/2026.09.25/</id>
+    <published>2026-09-25T08:35:45.000Z</published>
+    <updated>2026-09-25T08:36:42.961Z</updated>
+    
+    
+    <summary type="html">距离第一次部署博客已经过去 1822 天，记录一下这些年的近况，以及重新拾起博客的心情。</summary>
+    
+    
+    
+    <category term="生活" scheme="https://izumikonata.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="日记" scheme="https://izumikonata.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="博客" scheme="https://izumikonata.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>关于泉此方</title>
@@ -54,11 +77,11 @@
     <category term="生活" scheme="https://izumikonata.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
+    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
     <category term="web" scheme="https://izumikonata.com/tags/web/"/>
     
     <category term="悦读" scheme="https://izumikonata.com/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-    <category term="生活" scheme="https://izumikonata.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
