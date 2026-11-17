@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#81cab1">
+  <meta name="description" content="泉此方主题的轻量声画互动小游戏。">
+  <title>Konatap - 泉此方的深夜节拍</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app" class="app" data-started="false" data-fever="false" data-scene="stage" data-paused="false">
+    <canvas id="scene-canvas" aria-hidden="true"></canvas>
+    <canvas id="effect-canvas" aria-label="声画演奏区"></canvas>
+    <header class="topbar">
+      <div class="brand"><strong>KONATAP</strong><span>泉此方</span></div>
+      <nav class="controls" aria-label="演奏控制">
+        <a class="icon-button" href="https://izumikonata.com/games/" aria-label="返回博客" title="返回博客"><img src="assets/icons/arrow-left.svg" alt=""></a>
+        <button id="pause-toggle" class="icon-button" type="button" aria-label="暂停" aria-pressed="false" title="暂停"><img src="assets/icons/pause.svg" alt=""></button>
+        <button id="beat-toggle" class="icon-button" type="button" aria-pressed="true" aria-label="关闭伴奏" title="伴奏"><img src="assets/icons/music-2.svg" alt=""></button>
+        <button id="sound-toggle" class="icon-button" type="button" aria-pressed="true" aria-label="静音" title="声音"><img src="assets/icons/volume-2.svg" alt=""></button>
+        <button id="help-toggle" class="icon-button" type="button" aria-label="音色库" title="音色库"><img src="assets/icons/upload.svg" alt=""></button>
+        <button id="settings-toggle" class="icon-button" type="button" aria-label="设置" title="设置"><img src="assets/icons/sliders-horizontal.svg" alt=""></button>
+        <button id="fullscreen-toggle" class="icon-button" type="button" aria-label="全屏" title="全屏"><img src="assets/icons/maximize.svg" alt=""></button>
+      </nav>
+    </header>
+    <section id="start-screen" class="start-screen" aria-labelledby="game-title">
+      <div class="start-copy">
+        <p class="eyebrow">KONATAP</p>
+        <h1 id="game-title">泉此方的<br>深夜节拍</h1>
+        <button id="start-button" class="start-button" type="button"><img src="assets/icons/play.svg" alt=""><span>开始演奏</span></button>
+      </div>
+    </section>
+    <button id="resume-button" class="resume-button" type="button" hidden><img src="assets/icons/play.svg" alt=""><span>继续演奏</span></button>
+    <aside id="game-stats" class="game-stats" hidden>
+      <div class="scoreboard"><span>连击 <strong id="combo">0</strong></span><span>最高 <strong id="best">0</strong></span></div>
+      <div class="moyu-meter">
+        <div class="meter-label"><span>摸鱼值</span><strong id="moyu-value">0%</strong></div>
+        <div id="moyu-track" class="meter-track" role="progressbar" aria-label="摸鱼值" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="moyu-fill" class="meter-fill"></div></div>
+      </div>
+    </aside>
+    <section id="help-panel" class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="sample-title" hidden>
+      <div class="modal-content">
+        <button class="close-button icon-button" type="button" data-close-panel aria-label="关闭音色库" title="关闭"><img src="assets/icons/x.svg" alt=""></button>
+        <p class="eyebrow">SOUND BANK</p><h2 id="sample-title">音色库</h2>
+        <label class="select-setting">触发位<select id="sample-note"></select></label>
+        <fieldset id="sample-mode" class="scene-setting"><legend>采样模式</legend><div class="segmented">
+          <label><input type="radio" name="sample-mode" value="raw" checked><span>原样</span></label>
+          <label><input id="sample-vocal" type="radio" name="sample-mode" value="vocal"><span>节拍人声</span></label>
+        </div></fieldset>
+        <div id="sample-slice-settings" class="slice-settings" hidden>
+          <div class="sample-fields">
+            <label class="select-setting">起点 / 秒<input id="sample-start" type="number" min="0" max="9.98" step="0.01" value="0"></label>
+            <label class="select-setting">长度 / 拍<select id="sample-beats"><option value="0.5">½ 拍</option><option value="1" selected>1 拍</option><option value="2">2 拍</option></select></label>
+          </div>
+          <label class="select-setting">原音音高<select id="sample-root"></select></label>
+          <label class="switch-setting"><input id="sample-bank" type="checkbox" checked><span>铺到 10 个人声键位</span></label>
+        </div>
+        <label class="file-button"><img src="assets/icons/upload.svg" alt=""><span>导入本地音频</span><input id="sample-file" type="file" accept="audio/*"></label>
+        <output id="sample-status" class="sample-status">30 位原声采样 · 0 / 32 本地替换</output>
+        <button id="sample-preview" class="icon-button" type="button" aria-label="试听当前触发位" title="试听当前触发位"><img src="assets/icons/play.svg" alt=""></button>
+        <button id="sample-clear" class="secondary-button" type="button"><img src="assets/icons/rotate-ccw.svg" alt=""><span>恢复全部内置音色</span></button>
+      </div>
+    </section>
+    <section id="settings-panel" class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title" hidden>
+      <div class="modal-content settings-content">
+        <button class="close-button icon-button" type="button" data-close-panel aria-label="关闭设置" title="关闭"><img src="assets/icons/x.svg" alt=""></button>
+        <p class="eyebrow">SETTINGS</p><h2 id="settings-title">演奏设置</h2>
+        <label class="range-setting" for="volume-range"><span>音量 <output id="volume-output" for="volume-range">70%</output></span><input id="volume-range" type="range" min="0" max="100" step="5" value="70"></label>
+        <fieldset class="scene-setting"><legend>场景</legend><div class="segmented"><label><input type="radio" name="scene" value="stage" checked><span>演奏舞台</span></label><label><input type="radio" name="scene" value="room"><span>深夜房间</span></label></div></fieldset>
+        <label class="switch-setting"><input id="quantize-toggle" type="checkbox" checked><span>柔和节拍吸附</span></label>
+        <label class="switch-setting"><input id="motion-toggle" type="checkbox"><span>减少动态效果</span></label>
+        <label class="switch-setting"><input id="pads-toggle" type="checkbox"><span>显示触摸打击垫</span></label>
+        <label class="switch-setting"><input id="stats-toggle" type="checkbox"><span>连击与摸鱼模式</span></label>
+        <button id="restart-button" class="secondary-button" type="button"><img src="assets/icons/rotate-ccw.svg" alt=""><span>重新开始</span></button>
+      </div>
+    </section>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div class="touch-pads" aria-label="触摸打击垫">
+      <button type="button" data-note="0" aria-label="原声短音 01"><span>A</span></button>
+      <button type="button" data-note="2" aria-label="短音节 pu"><span>D</span></button>
+      <button type="button" data-note="4" aria-label="短音节 po"><span>Z</span></button>
+      <button type="button" data-note="8" aria-label="弹拨低音"><span>G</span></button>
+      <button type="button" data-note="12" aria-label="原声旋律 02"><span>J</span></button>
+      <button type="button" data-note="16" aria-label="短音节 no"><span>T</span></button>
+      <button type="button" data-note="24" aria-label="原声点缀 06"><span>Q</span></button>
+      <button type="button" data-note="28" aria-label="元音 o"><span>2</span></button>
+    </div>
+  </main>
+  <script src="core.js"></script>
+  <script src="assets/audio/vocal-bank.js"></script>
+  <script src="assets/audio/konata-trial-bank.js"></script>
+  <script src="audio.js"></script>
+  <script src="assets/room/room-art.js"></script>
+  <script src="room.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
