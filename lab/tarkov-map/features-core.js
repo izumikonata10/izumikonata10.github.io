@@ -22,12 +22,12 @@ const AtlasFeatureCore = (() => {
     return tasks.filter(t=>(!hideDone||!done.includes(t.id))&&words.every(w=>(t.title+' '+t.description+' '+(t.english||'')).toLocaleLowerCase().includes(w)));
   }
   function taskMarkerIds(tasks,ids){return new Set(tasks.filter(t=>ids.includes(t.id)).flatMap(t=>t.markers));}
-  function visibleTaskMarkers(all,base,floor,tasks,mode,ids) {
+  function visibleTaskMarkers(all,base,tasks,mode,ids) {
     if(mode==='default')return base;
     const allTaskIds=new Set(tasks.flatMap(t=>t.markers));
     const wanted=mode==='all'?allTaskIds:taskMarkerIds(tasks,ids);
     const merged=new Map(base.filter(p=>!allTaskIds.has(p.id)).map(p=>[p.id,p]));
-    for(const p of all)if(String(p.floor_key)===String(floor)&&wanted.has(p.id))merged.set(p.id,p);
+    for(const p of all)if(wanted.has(p.id))merged.set(p.id,p);
     return [...merged.values()];
   }
   function cleanState(raw) {
